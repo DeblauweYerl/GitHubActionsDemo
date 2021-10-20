@@ -41,4 +41,4 @@ jobs:
           docker run -d -p 80:80 hello-world-nginx:v1
       
       - name: Test Docker container
-      run: curl localhost:80
+        run: curl localhost:80
