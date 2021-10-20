@@ -37,7 +37,7 @@ jobs:
 
       - name: Build and run Docker file
         run: |
-          docker build -t hello-world-nginx:v1 .
+          docker build . -t hello-world-nginx:v1
           docker run -d -p 80:80 hello-world-nginx:v1
       
       - name: Test Docker container
